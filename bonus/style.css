@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    width: 40px;
+    height: 20px;;
+    margin: 20px 100px;
+}
+
+
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-betweendf                                                                                                        ;
+}
+
+.header ul li {
+    margin-right: 30px;
+}
