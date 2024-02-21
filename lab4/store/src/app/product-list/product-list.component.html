@@ -1,0 +1,19 @@
+<h2>Products</h2>
+
+<div class="product--container">
+  <div class="product" *ngFor="let product of products">
+    <img src="{{product.image[0]}}" alt="" width="200px">
+    <h3>
+      <a href="{{product.link}}" [title]="product.name + ' details'">
+        {{ product.name }}
+      </a>
+    </h3>
+    <h4>Rating: {{product.rating}}</h4>
+    <p *ngIf="product.description">
+      Description: {{ product.description }}
+    </p>
+    <a href="https://whatsapp://send?text=https://www.google.com.mx/" data-action="share/whatsapp/share" >
+      <button type="button" >Share</button>
+    </a>
+  </div>
+</div>

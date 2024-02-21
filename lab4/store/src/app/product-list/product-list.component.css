@@ -1,0 +1,7 @@
+.product_container {
+  display: flex;
+}
+
+.product {
+  min-width: 500px;
+}

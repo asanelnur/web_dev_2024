@@ -1,0 +1,18 @@
+<h2>Product Details</h2>
+
+<div class="main-pro-div" *ngIf="product">
+  <h3>
+    <a href="{{product.link}}" [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
+  <h4>Rating: {{ product.rating  }}</h4>
+  <div class="pro-desc">
+    <p>{{ product.description }}</p>
+  </div>
+  <div class="imgs">
+    <div class="pro-img" *ngFor="let imgUrl of product.image">
+      <img class="imgs" src={{imgUrl}} width="150px">
+    </div>
+  </div>
+</div>
