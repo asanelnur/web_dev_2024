@@ -1,0 +1,12 @@
+<div class="content">
+  <div class="category-list">
+    <p><input type="checkbox" [(ngModel)]="productsShow" (change)="categoryCheck()">{{category.title}}</p>
+    <p>Number of products: {{category.numberOfProducts}}</p>
+  </div>
+
+  <div class="items" *ngIf="products">
+    <div class="item"  *ngFor="let product of products">
+      <app-product-item [product]="product" (remove)="removeProduct($event)"></app-product-item>
+    </div>
+  </div>
+</div>
