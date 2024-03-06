@@ -1,0 +1,11 @@
+<div *ngIf="loaded">
+  <h3>Album detail #{{album.id}}</h3>
+
+  <h3>Title:</h3>
+  <input type="text" [(ngModel)]="album.title">
+  <button (click)="save()">Save</button>
+  <a [routerLink]="['albums']">Go Back</a>
+</div>
+
+
+<p *ngIf="!loaded">Post detail page is loading...</p>
