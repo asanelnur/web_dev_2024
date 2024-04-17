@@ -1,0 +1,10 @@
+<h2>Companies: </h2>
+<ul *ngIf="loaded; else loading">
+  <li *ngFor="let company of companies">
+    <a [routerLink]="['/company', company.id]">{{company.id}}) {{company.name}}</a>
+  </li>
+</ul>
+
+<ng-template #loading>
+  <p>Companies are loading ...</p>
+</ng-template>
